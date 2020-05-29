@@ -48,7 +48,7 @@ class Song
     @song = self.new 
     @song.artist_name = name_array[0] 
     # the artist's name is the first element in the array, so index = 0 
-    @song.song_name = name_array[1]
+    @song.name = name_array[1]
     @song
   end
 end
