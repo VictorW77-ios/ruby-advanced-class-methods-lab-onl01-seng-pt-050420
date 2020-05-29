@@ -30,5 +30,6 @@ class Song
   def self.find_by_name(name)
     puts "#{name}"
   end
+  find_by_name
 
 end
