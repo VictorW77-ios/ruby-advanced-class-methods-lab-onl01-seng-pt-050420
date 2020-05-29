@@ -51,4 +51,8 @@ class Song
     @song.name = name_array[1]
     @song
   end
+  
+  def self.create_from_filename(song_name)
+    
+  end
 end
