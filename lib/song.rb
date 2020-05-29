@@ -44,6 +44,7 @@ class Song
   
   def self.new_from_filename 
     name_array = name.sub!(/.mp3/,"").split(" - ") # needed a lil' regex razzle dazzle
+    song = self.create 
     
   end
 end
