@@ -53,6 +53,10 @@ class Song
   end
   
   def self.create_from_filename(song_name)
-    
+    name_array = song_name.sub!(/.mp3/,"").split(" - ") 
+    @song = self.new 
+    @song.artist_name = name_array[0] 
+    @song.name = name_array[1]
+    @song
   end
 end
