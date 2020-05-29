@@ -42,8 +42,8 @@ class Song
     @@all.sort_by{|song| song.name}
   end
   
-  def self.new_from_filename
-    name_array = name.sub!(/.mp3/,"")split(" - ")
+  def self.new_from_filename # needed a lil' regex razzle dazzle
+    name_array = name.sub!(/.mp3/,"").split(" - ")
     
   end
 end
