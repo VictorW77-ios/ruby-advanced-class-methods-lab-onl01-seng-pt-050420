@@ -60,4 +60,8 @@ class Song
     @song.name = name_array[1]
     @song
   end
+  
+  def self.destroy_all
+    @@all.clear
+  end
 end
